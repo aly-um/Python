@@ -1,0 +1,23 @@
+#CHALLENGE ACTIVITY 2.2.1: Python data types
+
+practiceList2 = ['cat', 104]
+
+# Create a list with elements 5, 'a', 19
+practiceList1 = [5, 'a', 19]
+print(practiceList1)
+
+# Replace the second element with 'x'
+practiceList1[1]='x'
+print(practiceList1)
+
+# Append 24 to the list
+practiceList1.append(24)
+print(practiceList1)
+
+# Remove the third element from the list
+practiceList1.pop(2)
+print(practiceList1)
+
+# Combine practiceList1 and practiceList2
+combinedList = practiceList1 + practiceList2
+print(combinedList)
