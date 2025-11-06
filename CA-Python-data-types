@@ -1,5 +1,8 @@
 # CHALLENGE ACTIVITY 2.2.1: Python data types
 
+""" LISTS
+The following code is to demonstrate creating and modifying lists """
+
 practiceList2 = ['cat', 104]
 
 # Create a list with elements 5, 'a', 19
@@ -21,3 +24,20 @@ print(practiceList1)
 # Combine practiceList1 and practiceList2
 combinedList = practiceList1 + practiceList2
 print(combinedList)
+
+
+""" TUPLES
+The following code demonstrates use of the namedtuple class from the Collections package """
+
+# Import the namedtuple class
+from collections import namedtuple
+
+# Create named tuple type Animal with field names 'name', 'order', 'length', and 'legs'
+Animal = namedtuple('Animal', ['name', 'order', 'length', 'legs'])
+
+# Create an object of type Animal with name = 'iguana', order = 'squamata', length = 1.5, and legs = 4
+iguana = Animal('iguana', 'squamata', 1.5, 4)
+
+# Print the length element of the iguana object
+print(iguana.length)
+print(iguana)
