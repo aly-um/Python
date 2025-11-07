@@ -1,0 +1,55 @@
+""" findDifference function
+The following code demonstrates how to define and use the function "findDifference" """
+
+# Defines the function findDifference
+def findDifference(x, y):
+    result = x - y
+    return result
+
+# Prints the output of the function findDifference() for x=9 and y=1
+print(findDifference(9,1))
+
+
+""" define function then call
+The following code defines the function "showTime" and how to fill in the function call """
+
+# Defines the function showTime
+def showTime(year, month, day, hour, minutes):
+    print(str(month) + '/' + str(day) + '/' + str(year) + ' ' + str(hour) + ':' + str(minutes))
+
+# Fills in function call to display output "1/13/2008 6:15"
+showTime(2008, 1, 13, 6, 15)
+
+
+""" rearrange() function
+This code demonstrates using the rearrange() function with set parameters """
+
+# Defines the function rearrange() with parameters l, m, and n, with default values for m and n
+def rearrange(l, m=4, n=10):
+    print(str(n) + '/' + str(l) + '/' + str(m))
+
+rearrange(8, 3, 1)
+rearrange(m=9, l=20)
+rearrange(n=7, l=19)
+
+
+""" subtract() and diffSum() functions
+The following code defines and demonstrates the subtract() and diffSum() functions """
+
+# Defines the function subtract
+def subtract(x, y):
+    result = x - y
+    return result
+
+# Defines the function sumDiff
+def sumDiff(operation, x, y, z):
+     return operation(x, y) + z
+
+# Creates an object called diffFirst with value 8
+diffFirst = 8
+
+# Creates an object called diffSecond with value 29
+diffSecond = 29
+
+# Prints the output of the function sumDiff() using subtract, diffFirst, diffSecond, and 5 as arguments
+print(sumDiff(subtract, diffFirst, diffSecond, 5))
