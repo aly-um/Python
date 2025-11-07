@@ -4,3 +4,4 @@ Please feel free to reach out if you have any questions!
 
 ## Challenge Activities (Practice)
 1. Python data types
+2. Python functions
