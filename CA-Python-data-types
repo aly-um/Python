@@ -41,3 +41,41 @@ iguana = Animal('iguana', 'squamata', 1.5, 4)
 # Print the length element of the iguana object
 print(iguana.length)
 print(iguana)
+
+
+""" SETS
+The following code converts a list into a set """
+
+# Create a list
+givenList = [42, 9, 109]
+
+# Create the set nextSet
+nextSet = {42, 24}
+
+# Convert givenList to a set
+convertedSet = set(givenList)
+print(sorted(convertedSet))
+
+# Remove 9 from the set 
+convertedSet.remove(9)
+print(sorted(convertedSet))
+
+# Find the difference of convertedSet and nextSet
+convertedSetDifference = convertedSet.difference(nextSet)
+print(sorted(convertedSetDifference))
+
+
+""" DICTIONARY
+The following code creates a dictionary and demonstrates how to modify it """
+
+# Create a dictionary with indexes 'robin', 'tarantula', and 'wolf', and values 0.25, 0.11, and 1.1
+practiceDict = {'robin':0.25, 'tarantula':0.11, 'wolf':1.1} 
+print(practiceDict)
+
+# Modify the value of the element with key 'wolf' to 1.06
+practiceDict['wolf'] = 1.06
+print(practiceDict)
+
+# Remove element with key 'tarantula'
+del practiceDict['tarantula']
+print(practiceDict)
