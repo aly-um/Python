@@ -1,0 +1,18 @@
+""" Finding the mean
+This code calculates the mean of the area for this sample dataset
+"""
+# Import packages
+import pandas as pd
+
+# Create dataset
+data = {'City': ['Omaha', 'Houston', 'Tucson', 'Albany', 'Sacramento'],
+	'Population' : [486000, 2403600, 542629, 96900, 503500],
+    'Area' : [140, 670, 240, 23, 100]}
+
+# Create datafrane
+df = pd.DataFrame(data)
+print(df)
+
+# Find the mean of the Area
+areaMean = df['Area'].mean()
+print(areaMean)
