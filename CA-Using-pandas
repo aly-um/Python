@@ -1,0 +1,89 @@
+""" Subsetting dataframes
+The following demonstrates how to subset a dataframe from an existing dataset
+"""
+
+# Loads necessary packages
+import pandas as pd
+
+# Loads the taxi.csv dataset
+taxicabsNY = pd.read_csv('taxi.csv')
+
+# Subset a column of the taxicabsNY dataframe by specifying the column name
+distance = taxicabsNY[['distance']]
+
+# Prints the column
+print(distance)
+
+
+
+""" Using iloc
+This code uses the iloc() method to subset the data
+"""
+
+# Loads necessary packages
+import pandas as pd
+
+# Loads the taxi.csv dataset
+cabsNY = pd.read_csv('taxi.csv')
+
+# Subset cabsNY using the iloc method
+df = cabsNY.iloc[:5, :6]
+
+# Prints the column
+print(df)
+
+
+
+""" Using loc
+This code uses the loc() method to subset the data
+"""
+
+# Loads necessary packages
+import pandas as pd
+
+# Loads the taxi.csv dataset
+taxicabsNY = pd.read_csv('taxi.csv')
+
+# Subset taxicabsNY by specifying columns and rows using the loc method
+df = taxicabsNY.loc[10:, ['passengers']]
+
+# Prints the column
+print(df)
+
+
+
+""" Using relational operators
+This method subsets the data by using the relational operator "<"
+"""
+
+# Loads necessary packages
+import pandas as pd
+
+# Loads the taxi.csv dataset
+taxisNY = pd.read_csv('taxi.csv')
+
+# Subset taxisNY using comparison operators
+df = taxisNY[(taxisNY['distance'] < 3)]
+
+# Prints the column
+print(df)
+
+
+
+""" Using comparison and logical operators
+This code subsets the data by using the comparison operators "==" and the logical operators "&" and "|"
+to return any instances in which the dropoff borough is Brooklyn, and the pickup zone is either Rego Park or Little Italy/NoLiTa.
+"""
+
+# Loads necessary packages
+import pandas as pd
+
+# Loads the taxi.csv dataset
+taxisNY = pd.read_csv('taxi.csv')
+
+# Subset taxisNY using comparison and logical operators
+df = taxisNY[(taxisNY['dropoff_borough'] == 'Brooklyn') 
+ & ((taxisNY['pickup_zone'] == 'Rego Park') | (taxisNY['pickup_zone'] == 'Little Italy/NoLiTa'))]
+
+# Prints the column
+print(df)
