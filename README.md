@@ -5,3 +5,8 @@ Please feel free to reach out if you have any questions!
 ## Challenge Activities (Practice)
 1. Python data types
 2. Python functions
+
+## LAB Activities (Practice)
+1. Lists basics
+2. Sets basics
+3. Importing packages
