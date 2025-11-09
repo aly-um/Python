@@ -1,4 +1,13 @@
+""" The following code demonstrates basic funtions in lists: concatenate, append, replace, and remove.
 
+Example of input:
+rose
+peony
+lily
+rose
+daisy
+aster
+"""
 
 myFlower1 = input()
 myFlower2 = input()
