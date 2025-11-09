@@ -34,7 +34,7 @@ print(ourList)
 ourList.append(theirFlower)
 print(ourList)
 
-# Replace myFlower2 in our_list with theirFlower
+# Replace myFlower2 in ourList with theirFlower
 ourList[1]= theirFlower
 print(ourList)
 
